@@ -1,0 +1,39 @@
+<div class="container">
+
+    <div class="text-center mb-5">
+        <h3 class="text-primary">Acortador de URL's</h3>
+    </div>
+    <div class="container abs-center">
+
+        <div class="card bg-light" style="width: 55%;">
+
+            <div class="card-header text-center">
+                Generador
+            </div>
+
+            <div class="card-body">
+
+                <form [formGroup]="form" (submit)="generar()">
+
+                    <div class="form-group row">
+                        <label for="url" class="col-form-label col-sm-2">URL</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" formControlName="url">
+                        </div>
+                        <button type="submit" class="btn btn-outline-success">Generar</button>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="shortUrl" class="col-form-label col-sm-2">Short</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" formControlName="shortUrl">
+                        </div>
+                        <button type="button" class="btn btn-outline-primary" (click)="obtenerUrl()">Ir</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>

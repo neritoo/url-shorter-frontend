@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule, InjectionToken } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+const externalUrlProvider = new InjectionToken('externalUrlRedirectResolver');
 
 const routes: Routes = [];
 
